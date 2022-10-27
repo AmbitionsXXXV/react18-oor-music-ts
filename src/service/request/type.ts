@@ -1,4 +1,4 @@
-import type { AxiosRequestConfig, AxiosResponse } from "axios"
+import type { AxiosRequestConfig, AxiosResponse } from 'axios'
 
 // 针对AxiosRequestConfig配置进行扩展
 export interface ETCInterceptors<T = AxiosResponse> {

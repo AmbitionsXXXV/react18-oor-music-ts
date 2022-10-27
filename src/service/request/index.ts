@@ -1,6 +1,6 @@
-import axios from "axios"
-import type { AxiosInstance } from "axios"
-import type { ETCRequestConfig } from "./type"
+import axios from 'axios'
+import type { AxiosInstance } from 'axios'
+import type { ETCRequestConfig } from './type'
 
 // 拦截器: 蒙版Loading/token/修改配置
 
@@ -77,16 +77,16 @@ class ETCRequest {
   }
 
   get<T = any>(config: ETCRequestConfig<T>) {
-    return this.request({ ...config, method: "GET" })
+    return this.request({ ...config, method: 'GET' })
   }
   post<T = any>(config: ETCRequestConfig<T>) {
-    return this.request({ ...config, method: "POST" })
+    return this.request({ ...config, method: 'POST' })
   }
   delete<T = any>(config: ETCRequestConfig<T>) {
-    return this.request({ ...config, method: "DELETE" })
+    return this.request({ ...config, method: 'DELETE' })
   }
   patch<T = any>(config: ETCRequestConfig<T>) {
-    return this.request({ ...config, method: "PATCH" })
+    return this.request({ ...config, method: 'PATCH' })
   }
 }
 
