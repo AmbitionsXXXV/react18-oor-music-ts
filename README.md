@@ -5,4 +5,4 @@
 
 ## 项目技术栈
 
-`React` `Redux` `Less` `TypeScript`
+`React` `Redux` `Less` `TypeScript` `@reduxjs/toolkit`
