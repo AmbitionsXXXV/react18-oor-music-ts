@@ -6,8 +6,12 @@ import {
   useSelector
 } from 'react-redux'
 
+import recommendReducer from '../views/discover/child-views/recommend/store/recommend'
+
 const store = configureStore({
-  reducer: {}
+  reducer: {
+    recommend: recommendReducer
+  }
 })
 
 type GetStateFnType = typeof store.getState

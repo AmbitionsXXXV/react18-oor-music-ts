@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <AppHeader />
       <Suspense fallback="">
-        <div className="main">App:{useRoutes(routes)}</div>
+        <div className="main">{useRoutes(routes)}</div>
       </Suspense>
       <AppFooter />
     </div>
