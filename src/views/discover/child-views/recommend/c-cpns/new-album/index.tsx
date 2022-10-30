@@ -14,7 +14,7 @@ const NewAlbum: FC<IProps> = () => {
   /** 定义内部数据 */
   const bannerRef = useRef<ElementRef<typeof Carousel>>(null)
 
-  /** redux中获取数据 */
+  /** 从redux中获取数据 */
   const { newAlbums } = useAppSelector((state) => ({
     newAlbums: state.recommend.newAlbums
   }))
