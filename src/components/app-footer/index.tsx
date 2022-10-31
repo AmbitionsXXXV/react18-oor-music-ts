@@ -62,7 +62,7 @@ const AppFooter: FC<IProps> = () => {
           </div>
         </FooterLeft>
         <FooterRight className="right">
-          {footerImages.map((item, index) => {
+          {footerImages.map((item) => {
             return (
               <li className="item" key={item.link}>
                 <a
@@ -73,7 +73,7 @@ const AppFooter: FC<IProps> = () => {
                 >
                   {' '}
                 </a>
-                <span className="title">{item.title}</span>
+                <span className="title"></span>
               </li>
             )
           })}
