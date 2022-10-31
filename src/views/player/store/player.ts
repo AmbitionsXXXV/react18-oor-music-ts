@@ -278,6 +278,87 @@ const initialState: IPlayerState = {
       mst: 9,
       cp: 1415923,
       publishTime: 0
+    },
+    {
+      name: '终结孤单',
+      id: 386536,
+      pst: 0,
+      t: 0,
+      ar: [
+        {
+          id: 13193,
+          name: '五月天',
+          tns: [],
+          alias: []
+        }
+      ],
+      alia: [],
+      pop: 80,
+      st: 0,
+      rt: '600902000000028840',
+      fee: 8,
+      v: 44,
+      crbt: null,
+      cf: '',
+      al: {
+        id: 38285,
+        name: '我们是五月天',
+        picUrl:
+          'https://p1.music.126.net/v4V40sXKnaqsG0ACyY0aDg==/109951164912221924.jpg',
+        tns: [],
+        pic_str: '109951164912221924',
+        pic: 109951164912221920
+      },
+      dt: 189000,
+      h: {
+        br: 320000,
+        fid: 0,
+        size: 7580827,
+        vd: -45000,
+        sr: 44100
+      },
+      m: {
+        br: 192000,
+        fid: 0,
+        size: 4548533,
+        vd: -42600,
+        sr: 44100
+      },
+      l: {
+        br: 128000,
+        fid: 0,
+        size: 3032386,
+        vd: -41100,
+        sr: 44100
+      },
+      sq: null,
+      hr: null,
+      a: null,
+      cd: '1',
+      no: 1,
+      rtUrl: null,
+      ftype: 0,
+      rtUrls: [],
+      djId: 0,
+      copyright: 0,
+      s_id: 0,
+      mark: 1125899906850816,
+      originCoverType: 0,
+      originSongSimpleData: null,
+      tagPicList: null,
+      resourceState: true,
+      version: 44,
+      songJumpInfo: null,
+      entertainmentTags: null,
+      awardTags: null,
+      single: 0,
+      noCopyrightRcmd: null,
+      rurl: null,
+      mst: 9,
+      cp: 684010,
+      rtype: 0,
+      mv: 5293223,
+      publishTime: 1049126400000
     }
   ],
   playSongIndex: -1,
