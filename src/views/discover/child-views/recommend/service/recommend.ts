@@ -38,3 +38,9 @@ export function getArtistList(limit = 30) {
     }
   })
 }
+
+export function getTopList() {
+  return etcRequest.get({
+    url: '/toplist'
+  })
+}
