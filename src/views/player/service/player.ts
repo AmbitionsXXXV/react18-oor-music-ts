@@ -17,3 +17,21 @@ export function getSongLyric(id: number) {
     }
   })
 }
+
+export function getSimiPlaylist(id: number) {
+  return etcRequest.get({
+    url: '/simi/playlist',
+    params: {
+      id
+    }
+  })
+}
+
+export function getSimiSong(id: number) {
+  return etcRequest.get({
+    url: '/simi/song',
+    params: {
+      id
+    }
+  })
+}

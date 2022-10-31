@@ -1,15 +1,21 @@
 import React, { memo } from 'react'
 import type { ReactNode, FC } from 'react'
+import { DjRadioWrapper } from './style'
+import RadioCategory from './c-cpns/radio-category'
+import RadioRecommend from './c-cpns/radio-recommend'
+import RadioRanking from './c-cpns/radio-ranking'
 
 interface IProps {
   children?: ReactNode
 }
 
-const Djradio: FC<IProps> = (props) => {
+const Djradio: FC<IProps> = () => {
   return (
-    <div>
-      <div>Djradio</div>
-    </div>
+    <DjRadioWrapper className="wrap-v2">
+      <RadioCategory />
+      <RadioRecommend />
+      <RadioRanking />
+    </DjRadioWrapper>
   )
 }
 
