@@ -1,21 +1,28 @@
 import { configureStore } from '@reduxjs/toolkit'
 import {
-  shallowEqual,
-  TypedUseSelectorHook,
+  useSelector,
   useDispatch,
-  useSelector
+  TypedUseSelectorHook,
+  shallowEqual
 } from 'react-redux'
 
+import counterReducer from './modules/counter'
 import recommendReducer from '../views/discover/child-views/recommend/store/recommend'
+import playerReducer from '../views/player/store/player'
 
 const store = configureStore({
   reducer: {
-    recommend: recommendReducer
+    counter: counterReducer,
+    recommend: recommendReducer,
+    player: playerReducer
   }
 })
 
+// const state = store.getState()
+// type StateType = typeof state
+
 type GetStateFnType = typeof store.getState
-type IRootState = ReturnType<GetStateFnType>
+export type IRootState = ReturnType<GetStateFnType>
 type DispatchType = typeof store.dispatch
 
 // useAppSelector的hook

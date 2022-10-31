@@ -1,7 +1,12 @@
 import React, { lazy } from 'react'
-import { Navigate, RouteObject } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
+import type { RouteObject } from 'react-router-dom'
 
-// 打包时做分包处理
+// import Discover from '@/views/discover'
+// import Mine from '@/views/mine'
+// import Focus from '@/views/focus'
+// import Download from '@/views/download'
+
 const Discover = lazy(() => import('@/views/discover'))
 const Recommend = lazy(() => import('@/views/discover/child-views/recommend'))
 const Ranking = lazy(() => import('@/views/discover/child-views/ranking'))
