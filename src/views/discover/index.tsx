@@ -10,10 +10,12 @@ interface IProps {
 const Discover: FC<IProps> = () => {
   return (
     <div>
-      <NavBar />
-      <Suspense fallback="">
-        <Outlet />
-      </Suspense>
+      <div className="top">
+        <NavBar />
+        <Suspense fallback="">
+          <Outlet />
+        </Suspense>
+      </div>
     </div>
   )
 }

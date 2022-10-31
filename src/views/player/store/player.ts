@@ -100,91 +100,91 @@ const initialState: IPlayerState = {
   lyricIndex: -1,
   playSongList: [
     {
-      name: '温柔',
-      id: 386538,
+      name: 'カゲロウ',
+      id: 794267,
       pst: 0,
       t: 0,
       ar: [
         {
-          id: 13193,
-          name: '五月天',
+          id: 20878,
+          name: 'ONE OK ROCK',
           tns: [],
           alias: []
         }
       ],
       alia: [],
-      pop: 100,
+      pop: 75,
       st: 0,
-      rt: '600902000000534560',
-      fee: 8,
-      v: 76,
+      rt: '',
+      fee: 0,
+      v: 30,
       crbt: null,
       cf: '',
       al: {
-        id: 38285,
-        name: '我们是五月天',
+        id: 78646,
+        name: 'ゼイタクビョウ',
         picUrl:
-          'https://p2.music.126.net/v4V40sXKnaqsG0ACyY0aDg==/109951164912221924.jpg',
+          'https://p2.music.126.net/dZq3mfGR07F4Tj4hHTFJ7Q==/109951163799994121.jpg',
         tns: [],
-        pic_str: '109951164912221924',
-        pic: 109951164912221920
+        pic_str: '109951163799994121',
+        pic: 109951163799994130
       },
-      dt: 269800,
+      dt: 248000,
       h: {
         br: 320000,
         fid: 0,
-        size: 10794885,
-        vd: -63963,
+        size: 9922394,
+        vd: -51708,
         sr: 44100
       },
       m: {
         br: 192000,
         fid: 0,
-        size: 6476948,
-        vd: -61380,
+        size: 5953453,
+        vd: -51708,
         sr: 44100
       },
       l: {
         br: 128000,
         fid: 0,
-        size: 4317980,
-        vd: -59700,
+        size: 3968983,
+        vd: -51708,
         sr: 44100
       },
       sq: {
-        br: 1053723,
+        br: 912984,
         fid: 0,
-        size: 35536822,
-        vd: -63997,
+        size: 28302520,
+        vd: -51708,
         sr: 44100
       },
       hr: null,
       a: null,
       cd: '1',
-      no: 2,
+      no: 6,
       rtUrl: null,
       ftype: 0,
       rtUrls: [],
       djId: 0,
-      copyright: 0,
+      copyright: 2,
       s_id: 0,
-      mark: 8704,
+      mark: 9007199255003136,
       originCoverType: 1,
       originSongSimpleData: null,
       tagPicList: null,
       resourceState: true,
-      version: 76,
+      version: 30,
       songJumpInfo: null,
       entertainmentTags: null,
       awardTags: null,
       single: 0,
       noCopyrightRcmd: null,
-      rurl: null,
       rtype: 0,
+      rurl: null,
       mst: 9,
-      cp: 684010,
-      mv: 10929721,
-      publishTime: 1049126400000
+      cp: 663018,
+      mv: 0,
+      publishTime: 1193846400000
     },
     {
       name: '起风了',
@@ -363,7 +363,7 @@ const initialState: IPlayerState = {
   ],
   playSongIndex: -1,
 
-  playMode: 0 // 0:顺序播放 1:随机播放 2:单曲循环
+  playMode: 2 // 0:顺序播放 1:随机播放 2:单曲循环
 }
 
 const playerSlice = createSlice({

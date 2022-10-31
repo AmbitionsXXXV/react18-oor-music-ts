@@ -32,10 +32,6 @@ export function formatTime(time: number) {
   return `${formatMinute}:${formatSecond}`
 }
 
-export function getSizeImage(imgUrl: string, size: number) {
-  return `${imgUrl}?param=${size}x${size}`
-}
-
 export function getPlayUrl(id: number) {
   return `https://music.163.com/song/media/outer/url?id=${id}.mp3`
 }

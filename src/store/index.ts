@@ -6,14 +6,12 @@ import {
   shallowEqual
 } from 'react-redux'
 
-import counterReducer from './modules/counter'
 import recommendReducer from '../views/discover/child-views/recommend/store/recommend'
 import playerReducer from '../views/player/store/player'
-import { reducer as rankingReducer } from '../views/discover/child-views/ranking/store'
+import rankingReducer from '../views/discover/child-views/ranking/store/ranking'
 
 const store = configureStore({
   reducer: {
-    counter: counterReducer,
     recommend: recommendReducer,
     player: playerReducer,
     ranking: rankingReducer

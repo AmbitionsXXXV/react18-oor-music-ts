@@ -5,9 +5,8 @@ import { TopRankingWrapper } from './style'
 import classNames from 'classnames'
 import { shallowEqualApp, useAppDispatch, useAppSelector } from '@/store'
 
-import { changeCurrentIndex, getRanking } from '../../store/actionCreators'
-
-import { getSizeImage } from '@/utils/format'
+import { getImageSize } from '@/utils/format'
+import { changeCurrentIndex, getRanking } from '../../store/ranking'
 interface IProps {
   children?: ReactNode
 }
@@ -16,15 +15,15 @@ const TopRanking: FC<IProps> = () => {
   // redux
   const state = useAppSelector(
     (state) => ({
-      topList: state.getIn(['ranking', 'topList']),
-      currentIndex: state.getIn(['ranking', 'currentIndex'])
+      topList: state.ranking.topList,
+      currentIndex: state.ranking.currentIndex
     }),
     shallowEqualApp
   )
   const currentIndex = state.currentIndex
   const dispatch = useAppDispatch()
 
-  // hooks
+  // // hooks
   useEffect(() => {
     const id = state.topList[currentIndex] && state.topList[currentIndex].id
     if (!id) return
@@ -87,9 +86,9 @@ const TopRanking: FC<IProps> = () => {
                 className={classNames('item', {
                   active: index === currentIndex
                 })}
-                onClick={(e) => handlerItemClick(index)}
+                onClick={() => handlerItemClick(index)}
               >
-                <img src={getSizeImage(item.coverImgUrl, 40)} alt="" />
+                <img src={getImageSize(item.coverImgUrl, 40, 40)} alt="" />
                 <div className="info">
                   <div className="name">{item.name}</div>
                   <div className="update">{item.updateFrequency}</div>
