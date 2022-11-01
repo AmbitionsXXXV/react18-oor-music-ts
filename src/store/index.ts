@@ -9,12 +9,14 @@ import {
 import recommendReducer from '../views/discover/child-views/recommend/store/recommend'
 import playerReducer from '../views/player/store/player'
 import rankingReducer from '../views/discover/child-views/ranking/store/ranking'
+import djradioReducer from '../views/discover/child-views/djradio/store/djradio'
 
 const store = configureStore({
   reducer: {
     recommend: recommendReducer,
     player: playerReducer,
-    ranking: rankingReducer
+    ranking: rankingReducer,
+    djradio: djradioReducer
   }
 })
 
