@@ -1,9 +1,9 @@
-import React, { memo, useEffect } from 'react'
+import React, { memo } from 'react'
 import type { ReactNode, FC } from 'react'
 import { RecommendWrapper } from './style'
 import { shallowEqualApp, useAppSelector } from '@/store'
-import { useDispatch } from 'react-redux'
-import { getRadioRecommend } from '../../store/djradio'
+// import { useDispatch } from 'react-redux'
+// import { getRadioRecommend } from '../../store/djradio'
 import ThemeHeaderNormal from '@/components/theme-header-normal'
 import RadioRecommendCover from '@/components/radio-recommend-cover'
 
@@ -12,21 +12,19 @@ interface IProps {
 }
 
 const RadioRecommend: FC<IProps> = () => {
-  const { currentId, recommends } = useAppSelector(
+  const { recommends } = useAppSelector(
     (state) => ({
-      currentId: state.djradio.currentId,
+      // currentId: state.djradio.currentId,
       recommends: state.djradio.recommends
     }),
     shallowEqualApp
   )
 
-  const dispatch = useDispatch()
-
-  // hooks
-  useEffect(() => {
-    if (currentId === 0) return
-    dispatch(getRadioRecommend(currentId))
-  }, [dispatch, currentId])
+  // // hooks
+  // useEffect(() => {
+  //   if (currentId === 0) return
+  //   dispatch(getRadioRecommend(currentId))
+  // }, [dispatch, currentId])
 
   return (
     <RecommendWrapper>
